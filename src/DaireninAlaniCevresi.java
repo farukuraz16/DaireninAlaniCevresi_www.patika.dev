@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class DaireninAlaniCevresi {
     public static void main(String[] args) {
         /*Dairenin Alanını ve Çevresini Hesaplayan Program
@@ -15,5 +17,21 @@ public class DaireninAlaniCevresi {
                 Formül : (𝜋 * (r*r) * 𝛼) / 360
 
          */
+        Scanner dat= new Scanner(System.in);
+        System.out.println("Yarıçap= ");
+        double r=dat.nextDouble();
+        double pi=3.14;
+        double cevre=2*r*pi;
+        double alan=r*r*pi;
+        System.out.println("Dairenin yarıçapı = " + r);
+        System.out.println("Dairenin çevresi = " + cevre);
+        System.out.println("Dairenin alanı = " + alan);
+
+        System.out.println("Merkez açı giriniz= ");
+        double aci=dat.nextDouble();
+        System.out.println(aci+" derece açılı daire diliminin alanı= "+((pi*(r*r)*aci)/360));
+
+
+
     }
 }
